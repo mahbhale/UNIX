@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<script type="text/javascript" src="java.js">
+		</script>
+		<link rel="stylesheet" href="c.css"> </link>
+	</head>
+	<body>
+		<table>
+			<tr>	
+				<td rowspan=2>
+					<iframe class='check' src='' id="lastcheck">
+						
+					</iframe>
+					<img src="main_categories.png" usemap="#main1" id="mainimange">
+					<map name="main1">
+						<area onmouseover ="subcat('froze_food')" shape="rect" coords="10, 175, 130, 246 "> 
+						<area onmouseover="subcat('fresh_food')" shape="rect" coords="150, 175, 270, 246 ">
+						<area onmouseover="subcat('beverages_food')" shape="rect" coords="285, 175, 410, 246 ">
+						<area onmouseover="subcat('health_food')" shape="rect" coords="430, 175, 545, 246 ">
+						<area onmouseover="subcat('pet_food')" shape="rect" coords="565, 175,680, 246 ">
+					</map> <br/>
+					<img id="froze_sub" class="cssclass">
+					
+					<map name="froze_map">
+						<area onclick="subcat1('1002')" shape="rect" coords="10, 95, 137, 160 "> 
+					    <area onclick="subcat1('1003')" shape="rect" coords="290, 95, 410, 160  ">
+						<area onclick="subcat1('1000')" shape="rect" coords="95, 260, 212, 325  ">
+						<area onclick="subcat1('1001')" shape="rect" coords="230, 260, 350, 325 ">
+						<area onclick="subcat1('1004')" shape="rect" coords="375, 260,493, 325 ">
+						<area onclick="subcat1('1005')" shape="rect" coords="515, 260,625, 325 ">
+					</map>
+					
+					<map name="fresh_map">
+						<area onclick="subcat1('3002')" shape="rect" coords="10, 85, 100, 145"> 
+						<area onclick="subcat1('3003')" shape="rect" coords="210, 85, 300, 145 ">
+						<area onclick="subcat1('3004')" shape="rect" coords="315, 85, 405, 145 ">
+						<area onclick="subcat1('3006')" shape="rect" coords="415, 85, 500, 145 ">
+						<area onclick="subcat1('3007')" shape="rect" coords="520, 85, 600, 145 ">
+						<area onclick="subcat1('3005')" shape="rect" coords="620, 85, 700, 145 ">
+						<area onclick="subcat1('3000')" shape="rect" coords="53, 260, 170, 320  ">
+						<area onclick="subcat1('3001')" shape="rect" coords="188, 260, 305, 320 ">
+					</map>
+					
+					<map name="beverages_map">
+						<area onclick="subcat1('4005')" shape="rect" coords="583, 100,705, 250 ">
+						<area onclick="subcat1('4003')" shape="rect" coords="20, 258, 113, 320 ">
+						<area onclick="subcat1('4004')" shape="rect" coords="125, 258, 213, 320 ">
+						<area onclick="subcat1('4000')" shape="rect" coords="230, 258, 328, 320 ">
+						<area onclick="subcat1('4001')" shape="rect" coords="345, 258,428, 320 ">
+						<area onclick="subcat1('4002')" shape="rect" coords="442, 258,532, 320 ">
+					</map>
+					
+					<map name="health_map">
+						<area onclick="subcat1('2002')" shape="rect" coords="12, 105, 130, 155 ">
+						<area onclick="subcat1('2005')" shape="rect" coords="295, 105, 411, 155 ">
+						<area onclick="subcat1('2006')" shape="rect" coords="577, 105, 690, 155 ">
+						<area onclick="subcat1('2000')" shape="rect" coords="93, 275, 212, 338 ">
+						<area onclick="subcat1('2001')" shape="rect" coords="233, 275,350, 338 ">
+						<area onclick="subcat1('2003')" shape="rect" coords="377, 275,495, 338 ">
+						<area onclick="subcat1('2004')" shape="rect" coords="520, 275,635, 338 ">
+					</map>
+					
+					<map name="pet_map">
+						<area onclick="subcat1('5002')" shape="rect" coords="150, 188, 265, 245 ">
+						<area onclick="subcat1('5003')" shape="rect" coords="285, 188, 405, 245 ">
+						<area onclick="subcat1('5004')" shape="rect" coords="570, 188, 680, 245 ">
+						<area onclick="subcat1('5000')" shape="rect" coords="370,360,490, 418">
+						<area onclick="subcat1('5001')" shape="rect" coords="510, 360,630, 418 ">
+					</map>
+				</td>
+				<td>
+					<div id="db1">
+						
+					</div>
+					<div id="finalcart">
+						
+					</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id ="out">
+						
+						<table id ="cart1">
+							<tr>
+								<td>Id</td><td>Name</td><td>Pack</td><td>Count</td><td>Price</td>
+							</tr>
+							<tr>
+								<td>Total</td><td></td><td></td><td></td>
+								<td id ='subtotal'>0</td>
+							</tr>
+							<tr>
+								<td>
+									<button type='button' onclick='removed()'>ClearAll</button>
+								</td>
+								<td></td>
+								<td>
+									<button type='button' onclick='proceed()'>CheckOut</button>
+								</td>
+							</tr>
+						</table>
+					<div>
+				</td>
+			</tr>
+		</table>		
+	</body>
+</html>	
+		
